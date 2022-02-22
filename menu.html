@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creat Hover Manu use span</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+        ul li{}
+        ul li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin: 5px 20px;
+        }
+        /* ul li span{
+            height: 2px;
+            width: 0px;
+            background: orange;
+            display:block;
+            margin-left: 20px;
+            transition: .7s;
+        }
+        ul li:hover span{
+            width: 30px;
+        } */
+
+
+        ul li span{
+            height: 2px;
+            width: 30px;
+            transform: scaleX(0);
+            background: orange;
+            display:block;
+            margin-left: 20px;
+            transition: .7s;
+        }
+        ul li:hover span{
+            transform: scaleX(1);
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <ul>
+        <li>
+            <a href="#">Home</a>
+            <span></span>
+        </li>
+        <li>
+            <a href="#">About</a>
+            <span></span>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+            <span></span>
+        </li>
+    </ul>
+
+</body>
+</html>
